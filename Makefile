@@ -24,8 +24,8 @@ sample_profiler:
 
 my_profiler:
 	javac MyProfiler.java
-	$(MY_PROFILE_SETTINGS) MyProfiler 10000000
-	$(MY_HEAP_STATS_SETTINGS) MyProfiler 10000000
+	$(MY_PROFILE_SETTINGS) MyProfiler 1000000
+	$(MY_HEAP_STATS_SETTINGS) MyProfiler 1000000
 	@echo "jmc -open my_profile.jfr"
 	@echo "jmc -open my_heap_stats_profile.jfr"
 
